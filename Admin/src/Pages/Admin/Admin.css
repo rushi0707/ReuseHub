@@ -1,0 +1,14 @@
+
+/* Here we display flex because by default flex direction is ROW
+and we want sidebar on left side and AddProduct page on right side
+so we use display flex*/
+.admin{
+    display: flex;
+}
+
+/* and when screen size is less then show Addproduct below sidebar */
+@media(max-width:800px){
+    .admin{
+        flex-direction: column;
+    }
+}
